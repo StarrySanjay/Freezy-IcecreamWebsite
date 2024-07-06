@@ -692,7 +692,7 @@ header .bx-menu {
 }
 
 footer {
-    background-color: #edf3f2;
+    background-color: #fff;
     width: 100%;
     padding: 8% 4%;
     position: relative;
@@ -802,6 +802,19 @@ footer .bottom a {
         font-size: 55%;
     }
 
+    header {
+        background-color: #fff;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding: 1rem 5rem;
+        width: 100vw;
+    }
+
     header .bx-menu {
         display: block;
         background-color: #fff;
@@ -813,7 +826,7 @@ footer .bottom a {
         position: fixed;
         top: -90rem;
         left: 0;
-        width: 100%;
+        width: 100vw;
         border-top: 1px solid #ccc;
         opacity: 1;
         transition: .5s;
@@ -823,10 +836,10 @@ footer .bottom a {
         flex-flow: column;
         padding: 2rem 0;
         background-color: #fff;
+        width: 100vw;
     }
-
     header .navbar ul li {
-        width: 90%;
+        width: 100vw;
         text-align: center;
         margin: 1rem;
         background-color: #d11c77;
@@ -858,6 +871,15 @@ footer .bottom a {
         display: none;
     }
 
+    .home .box {
+        flex: 1 1 40rem;
+        text-transform: capitalize;
+        color: #fff;
+        padding: 2rem;
+        line-height: 1.5;
+        width: 100vw;
+    }
+
     .home .content h1 {
         font-size: 5rem;
     }
@@ -868,6 +890,30 @@ footer .bottom a {
 
     .services .box-container {
         width: auto;
+    }
+    .icons {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .img img{
+        width: 300px;
+    }
+    .home .box-container .box img {
+        background-size: contain;
+        background-position: center;
+        background-image: url(images/shap.png);
+        width: 99%;
+    }
+    footer .content .btn {
+        width: 300px;
+        font-size: 1.5rem;
+        color: #fff;
+        width: 30vw;
+    }
+
+    .container img{
+        width: 100vw;
     }
 }
 
@@ -882,3 +928,4 @@ footer .bottom a {
         width: 90%;
     }
 }
+
